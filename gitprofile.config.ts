@@ -12,14 +12,14 @@ const CONFIG = {
   base: '/portfolio/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: false, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
+          forks: true, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
@@ -32,21 +32,54 @@ const CONFIG = {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
-        {
-          title: 'Project Name',
+         {
+          title: 'LMS SED',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'The Learning Management System by ASPIRE is designed to enhance learning experience with our structured course platform. Candidates can log-in using provided credentials, navigate assigned modules, and track your progress. The platform ensures sequential learning.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://play-lh.googleusercontent.com/nwMUJ-AbBUzg8HzcLS9FjtpYf_R_nrLRqOZGXLrlqtnAYamKSL_q42pd1Aivv6ts2Ak=w480-h960-rw',
+          link: 'https://play.google.com/store/apps/details?id=sed.pmiu.aspirelms',
         },
         {
-          title: 'Project Name',
+          
+          title: 'Photo Translator App',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Photo translator instantly recognize & translate texts from restaurant menus, magazines, websites, road signs, books, descriptions etc. Translate photo, text & voice helps those who are traveling abroad and are facing problems in communication; those who are studying foreign languages, and for those who need image to text translation to work every day with documents in all languages.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://play-lh.googleusercontent.com/vKocsQ8f3V05TW3t3Ei13slKhq0CwG9m8MD1i46x7CDt-YDUOBPrjYsRf6FQnyGCdW4=s96-rw',
+          link: 'https://play.google.com/store/apps/details?id=com.voicetranslator.cameratranslation.object.translate.all.language.translatorapp',
+        },
+        {
+          title: 'GPS Map Camera',
+          description:
+            'GPStamp: GPS Map Stamp Camera is the ultimate app for capturing your moments with precise geolocation data and timestamp features. Whether you’re traveling or enjoying time with family and friends, this app ensures that every photo and video you take is tagged with accurate location, GPS coordinates, date, and time.',
+          imageUrl:
+            'https://play-lh.googleusercontent.com/4PBIcFMapwpTndNISOM6L-Ue1TTzXsmo8bq3lCX626HyhowTDylfvxhv_pczxfeHiVA=w480-h960-rw',
+          link: 'https://play.google.com/store/apps/details?id=com.gpsmapcamera.phototimestamp.datestamper.gpscamera.photodatestamp.geotagapp',
+        },
+         {
+          title: 'GPS Earth Map - 3D world maps',
+          description:
+            'Live Earth Map is one of the best 3d satellite view maps app that can facilitate you to discover the world and share your current location with your loved ones. 3D world map and satellite app use the gps & navigation feature to display all locations, explore nearby places are also a useful feature in earth live maps, easily spotting places around you at any time. Offline maps and distance finder app will help you to find distance between two points. Live satellite and earth maps, view app navigate you to reach the designation and plan your trip with route planner app and easily share location with friends.',
+          imageUrl:
+            'https://play-lh.googleusercontent.com/zYgKash4H2bLsRwpjyZqqsT7JNw28kfa7XRPJ9nd7itVISeN6v38rR8b6m2BCGEHDDti=w480-h960-rw',
+          link: 'https://play.google.com/store/apps/details?id=com.liveearthmap.routfinder.gpsnavigation.weather.earthmaps.satelliteview',
+        },
+        {
+          title: 'Screen Mirroring for Miracast',
+          description:
+            'The "All Screen Mirroring & Castify app" is a perfect screen mirroring smart tv cast tool, help you to cast and mirror your media content such as photos, videos, audio files, and PDF files on smart view screen mirroring. Allshare cast samsung smart view miracast is the free cast to tv and screen mirroring app for casting your favorite games on Smart TV View. The Web caster mirror app for Samsung smart view TV, helps you to search your favorite web series, movies, and TV shows from websites and mirror them on smart TV',
+          imageUrl:
+            'https://play-lh.googleusercontent.com/d1UvRGyK4Ne5D-lPf0HePOj5ST5IniJRVz1Tv7BlYpExdMoZOtPiKvtY8v_T2uJS24ri=w480-h960-rw',
+          link: 'https://play.google.com/store/apps/details?id=com.screenmirroring.miracast.webvideo.casttotv.screencast',
+        },
+        {
+          title: 'Digital Clock: Alarm Clock App',
+          description:
+            'Loud alarm clock: Smart Alarm & Battery charging animation shows the time and wallpapers. Loud alarm clock: Smart Alarm with battery charging animation shows the time clearly and accurately. Digital Clock allows you to set multiple alarms. Analog Clock features a specialized show for your learning, while digital clock help you follow time easily. Set alarms and hint with an easy-to-use digital clock app, while Loud alarm clock: Smart Alarm app that helps you remain on timetable every day. Never be late again with this exact clock widgets at your fingertips.',
+          imageUrl:
+            'https://play-lh.googleusercontent.com/NALbR9DiEytBSER-hOY0pE9G_qHHsPJyZWot-t92wLLkmZpzRk6_9r8OfH4wCsklcpb6=w480-h960-rw',
+          link: 'https://play.google.com/store/apps/details?id=com.itickapps.alarmclock.nightclock.digitalclock.smartclock.ailivewallpaper',
         },
       ],
     },
@@ -75,7 +108,7 @@ const CONFIG = {
     skype: '',
     telegram: '',
     website: '',
-    phone: '',
+    phone: '+92-302-5918567',
     email: 'shakeel723472@gmail.com',
   },
   resume: {
@@ -131,14 +164,7 @@ const CONFIG = {
       companyLink: 'https://botsolutions.tech/',
     },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
+  certifications: [],
   educations: [
     {
       institution: 'Quaid e Azam University Islamabad',
@@ -153,25 +179,8 @@ const CONFIG = {
       to: '2020',
     },
   ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
+  publications: [ 
+   
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
